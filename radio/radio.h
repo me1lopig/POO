@@ -13,10 +13,10 @@ class radio
 		int frecuencia;
 		int volumen;
 
+
+
 	// metodos
 	public:
-
-
 
 		radio(void)
 		{
