@@ -4,7 +4,6 @@
 
 
 
-
 // librerias standard y creadas
 #include <iostream>
 #include "Sobrecarga.h"
@@ -25,6 +24,7 @@ int main()
     persona1->correr();
     persona2->correr(30);
     cout << endl;
+
 
 
     // salida del programa
