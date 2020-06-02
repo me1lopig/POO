@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{FBF15E89-80CE-4DDB-A3AC-76D769FE4634}</ProjectGuid>
+    <ProjectGuid>{447C695C-51F7-4D4D-89AB-AF2194B7B05C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>arreglopoo</RootNamespace>
+    <RootNamespace>compuesta</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -147,10 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="notas.cpp" />
+    <ClCompile Include="compuesta.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="alumnos.h" />
+    <ClInclude Include="direccion.h" />
+    <ClInclude Include="estudiante.h" />
+    <ClInclude Include="expediente.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

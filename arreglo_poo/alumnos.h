@@ -5,7 +5,7 @@
 using namespace std;
 
 
-class arreglo_poo
+class alumnos
 {
 
 	// atributos
@@ -15,11 +15,12 @@ private:
 	float promedio;
 
 public:
-	// metodos
-	arreglo_poo(); // constructor por defecto
-	
 
-	
+	// metodos
+	alumnos(); // constructor por defecto
+
+
+
 	void pedirDatos()
 	{
 		cout << "Digite la nota de Matematicas " << endl;
@@ -30,15 +31,14 @@ public:
 		cin >> calProgra;
 
 	}
-	
+
 	void mostrarNotas()
 	{
 		cout << "La nota de Matematicas es" << calMate << endl;
 		cout << "La nota de Programacion es " << calProgra << endl;
-		cout << "El promedio de las notas es " << (calMate + calProgra) /2 << endl;
+		cout << "El promedio de las notas es " << (calMate + calProgra) / 2 << endl;
 
 	}
-
 
 };
 
