@@ -13,40 +13,32 @@ int main()
     float ladoA;
     float ladoB;
 
+    geometria* figura;
 
+       
 
-    cout << "Calculo del area y permitro de un cuadrilatero " << endl;
-    cout << "[1] rectangulo" << endl;
-    cout << "[2] cuadrado" << endl;
-    cout << "otra tecla salir" << endl;
-    cin >> entrada;
+   
+    cout << "Introduce el lado A  ";
+    cin >> ladoA;
+        
+    cout << "Introduce el lado B  ";
+    cin >> ladoB;
 
-
-
-    switch (entrada)
+    if (ladoA == ladoB)
     {
-    case 1:
-        cout << "Introduce el lado A del rectangulo ";
-        cin >> ladoA;
+        // los lados son iguales es un cuadrado
+        figura = new geometria(ladoA);
         
-        cout << "Introduce el lado B del rectangulo ";
-        cin >> ladoB;
-
-        geometria rectangulo(ladoA, ladoB);
-        
-        break;
-
-    case 2:
-        cout << "Introduce el lado del cuadrado ";
-        cin >> ladoA;
-        geometria rectangulo(ladoA);
-        break;
-        
-
-    default:
-        break;
+       
+    }
+    else
+    {
+        // los lados son dintintos es un rectangulo
+        figura = new geometria(ladoA,ladoB);
     }
 
+    cout << "El area es " << figura->getArea()<< endl;
+    cout << "El perimetro  es " << figura->getPerimetro() << endl;
 
 
     cout << "Pulsa una tecla para terminar " << endl;

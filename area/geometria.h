@@ -1,4 +1,7 @@
 #pragma once
+#include<iostream>
+
+using namespace std;
 
 
 class geometria
@@ -15,37 +18,46 @@ private:
 
 public:
 
+
+
 	geometria(float ladoA, float ladoB)
 	{
+		// comstructor del rectangulo
 		// rectangulo
 		this->ladoA = ladoA;
 		this->ladoB = ladoB;
 
 	}
 
-	geometria(float ladoA)
+	geometria(float lado)
 	{
+		// constructor del cuadrado
 		// cuadrado
-		this->ladoA = ladoA;
+		this->ladoA = ladoA= this->ladoB = ladoB=lado;
 
 	}
 
 
-	float getRectangulo()
+	float getArea()
 
 	{
-		// caso del rectangulo
+		// caso del area
 
 		return ladoA * ladoB;
+		
 	}
 
-	float getCuadrado()
+
+	float getPerimetro()
 
 	{
-		// lado del cuadrado
-		return ladoA * ladoA;
-			
+		// caso del perimetro
+
+		return ladoA *2+ ladoB*2;
+
 	}
+
+
 
 
 
